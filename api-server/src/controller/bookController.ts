@@ -7,10 +7,19 @@ import { getDataFromCreate, getDataFromUpdate, indexName } from "../utils/common
 
 export class BookController {
   static getBookList = async (
-    _request: FastifyRequest,
+    _request: FastifyRequest<{
+      Querystring : {
+        page : number,
+        size : number
+      }
+    }>,
     reply: FastifyReply
   ): Promise<ResponseSumType<EntityList<IBook>>> => {
     try {
+      const page = _request.query?.page || 1
+      const size = _request.query?.size || 20
+      const from = (page - 1) * size;
+
       const { body } = await client.search({
         index: indexName["books"],
         body: {
@@ -18,8 +27,8 @@ export class BookController {
             match_all: {},
           },
         },
-        from: 0,
-        size: 20,
+        from,
+        size,
       });
 
       const result: IBook[] = body.hits.hits.map((hit: any) => hit._source);
