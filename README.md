@@ -12,7 +12,7 @@ git clone https://github.com/NguyenVanDuc036/Test_Fcorp.git && cd Test_Fcorp/_de
 
 Open [http://localhost:3000/](http://localhost:3000/) 
 
-> Note: If api-server can't connect to elasticsearch --> retry
+> Note: If api-server can't connect to elasticsearch --> Retry
 
 ```
 cd Test_Fcorp/_deploy/local/ && bash build.sh
