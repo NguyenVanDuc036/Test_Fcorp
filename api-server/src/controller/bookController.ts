@@ -6,9 +6,6 @@ import { client } from "../config/connection";
 import { getDataFromCreate, getDataFromUpdate, indexName } from "../utils/common";
 
 export class BookController {
-  static upda(arg0: string, arg1: { schema: { body: any } }, upda: any) {
-    throw new Error("Method not implemented.");
-  }
   static getBookList = async (
     _request: FastifyRequest,
     reply: FastifyReply
