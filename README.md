@@ -5,7 +5,7 @@
 To compile Test app from source:
 
 
-1. If you want to start the application using docker
+1. Using docker
 ```
 git clone https://github.com/NguyenVanDuc036/Test_Fcorp.git && cd Test_Fcorp/_deploy/local/ && bash build.sh
 ```
