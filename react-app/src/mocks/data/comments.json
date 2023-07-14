@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "book_id": "3",
+        "comments": [
+            {
+                "id": 1,
+                "content": "The article covers the essentials, challenges, myths and stages the UX designer should conser while creating the design strategy.",
+                "createdAt": "2023-07-11 10:00:00",
+                "user": {
+                    "id": 1,
+                    "name": "tom cruise"
+                },
+                "children": [
+                    {
+                        "id": 2,
+                        "content": "Much appreciated! Glad you liked it ☺️",
+                        "user": {
+                            "id": 2,
+                            "name": "Jese Leos"
+                        },
+                        "children": [],
+                        "createdAt": "2023-07-11 11:00:00"
+                    },
+                    {
+                        "id": 3,
+                        "content": "straight-to-point article. Really worth time reading. Thank you! But tools are just the instruments for the UX designers. The knowledge of the design tools are as important as the creation of the design strategy.",
+                        "user": {
+                            "id": 3,
+                            "name": "Danny HartVery"
+                        },
+                        "children": [],
+                        "createdAt": "2023-07-11 11:00:00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "book_id": "2",
+        "comments": [
+            {
+                "id": 1,
+                "content": "The article covers the essentials, challenges, myths and stages the UX designer should conser while creating the design strategy.",
+                "createdAt": "2023-07-11 10:00:00",
+                "user": {
+                    "id": 1,
+                    "name": "tom cruise"
+                },
+                "children": [
+                    {
+                        "id": 2,
+                        "content": "Much appreciated! Glad you liked it ☺️",
+                        "user": {
+                            "id": 2,
+                            "name": "Jese Leos"
+                        },
+                        "children": [],
+                        "createdAt": "2023-07-11 11:00:00"
+                    },
+                    {
+                        "id": 3,
+                        "content": "straight-to-point article. Really worth time reading. Thank you! But tools are just the instruments for the UX designers. The knowledge of the design tools are as important as the creation of the design strategy.",
+                        "user": {
+                            "id": 3,
+                            "name": "Danny HartVery"
+                        },
+                        "children": [],
+                        "createdAt": "2023-07-11 11:00:00"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "book_id": "1",
+        "comments": [
+            {
+                "id": 1,
+                "content": "The article covers the essentials, challenges, myths and stages the UX designer should conser while creating the design strategy.",
+                "createdAt": "2023-07-11 10:00:00",
+                "user": {
+                    "id": 1,
+                    "name": "tom cruise"
+                },
+                "children": [
+                    {
+                        "id": 2,
+                        "content": "Much appreciated! Glad you liked it ☺️",
+                        "user": {
+                            "id": 2,
+                            "name": "Jese Leos"
+                        },
+                        "children": [],
+                        "createdAt": "2023-07-11 11:00:00"
+                    },
+                    {
+                        "id": 3,
+                        "content": "straight-to-point article. Really worth time reading. Thank you! But tools are just the instruments for the UX designers. The knowledge of the design tools are as important as the creation of the design strategy.",
+                        "user": {
+                            "id": 3,
+                            "name": "Danny HartVery"
+                        },
+                        "children": [],
+                        "createdAt": "2023-07-11 11:00:00"
+                    }
+                ]
+            }
+        ]
+    }
+]
