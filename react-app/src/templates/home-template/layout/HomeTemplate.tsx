@@ -5,7 +5,7 @@ import Header from "./Header/Header";
 import { Fragment } from 'react';
 
 
-export const HomeTempalte = (props: any) => {
+export const HomeTemplate = (props: any) => {
 
     return (
         <Fragment>

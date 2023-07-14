@@ -1,5 +1,4 @@
 import fastify from "fastify";
-import router from "./router";
 import { FASTIFY_PORT, HOST, PREFIX } from "./config/config";
 import rootRouter from "./router";
 import { seeBookdData } from "./seeders/seedBookData";

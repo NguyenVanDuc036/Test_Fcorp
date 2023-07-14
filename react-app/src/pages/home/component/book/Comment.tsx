@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { formatTimeDuration } from "../../../../utils/time";
 import { BookCommentModel, CommentModel } from "../../../../models/commentModel";
 import { currentUser } from "../../../../constants/common"
-import { useDispatch } from "react-redux";
 import clsx from "clsx";
 
 type Props = {
@@ -14,8 +13,8 @@ type Props = {
 };
 
 const Comment: React.FC<Props> = ({ comment, bookId, handleReply, handleDeleteComment, handleUpdateComment }) => {
-  const [replyText, setReplyText] = useState("");
-  const [editText, setEditText] = useState("");
+  const [replyText, setReplyText] = useState<string>("");
+  const [editText, setEditText] = useState<string>("");
   const [showReplyBox, setShowReplyBox] = useState<boolean>(false);
   const [showEditBox, setShowEditBox] = useState<boolean>(false);
   const inputEl = useRef(null);

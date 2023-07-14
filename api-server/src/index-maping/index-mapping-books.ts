@@ -1,6 +1,6 @@
 import { MappingTypeMapping } from "@elastic/elasticsearch/api/types";
 
-export const IndexMapingBooks: MappingTypeMapping = {
+export const IndexMappingBooks: MappingTypeMapping = {
     properties: {
         id: { type: 'text' },
         title: { type: 'text' },

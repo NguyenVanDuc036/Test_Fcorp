@@ -1,4 +1,4 @@
-import { IndexMapingBooks } from "../index-maping/index-mapping-books";
+import { IndexMappingBooks } from "../index-maping/index-mapping-books";
 import { client } from "../config/connection";
 import { indexName } from "../utils/common";
 import { IBook } from "../utils/interface/book.interface";
@@ -13,7 +13,7 @@ export async function seeBookdData() {
       await client.indices.create({
         index: indexName["books"],
         body: {
-          mappings: IndexMapingBooks
+          mappings: IndexMappingBooks
         }
       })
     }
