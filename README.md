@@ -4,9 +4,22 @@
 
 To compile Test app from source:
 
-> Note: If you want to start the application using docker
+
+1. If you want to start the application using docker
 ```
 git clone https://github.com/NguyenVanDuc036/Test_Fcorp.git && cd Test_Fcorp/_deploy/local/ && bash build.sh
 ```
 
 Open [http://localhost:3000/](http://localhost:3000/) 
+
+> Note: Tf api-server can't connect to elasticsearch --> retry
+
+```
+cd Test_Fcorp/_deploy/local/ && bash build.sh
+```
+
+2. Run local
+* api-server
+```
+cd Test_Fcorp/_deploy/local/ && bash build.sh
+```
