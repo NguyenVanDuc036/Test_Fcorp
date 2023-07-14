@@ -57,7 +57,7 @@ const Comments: React.FC<Props> = ({ bookId }) => {
 
   function handleReply(parentId: number, replyText: string) {
     const reply: CommentModel = newComment(replyText);
-    dispatch(replyComment({ book_id: bookId, parrent_id: parentId, reply }));
+    dispatch(replyComment({ book_id: bookId, parent_id: parentId, reply }));
   }
 
   function handleDeleteComment(commentId: number) {

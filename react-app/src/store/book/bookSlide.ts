@@ -20,7 +20,7 @@ interface IUpdateComment {
 
 interface IReplyComment {
   book_id: BookCommentModel["book_id"];
-  parrent_id: CommentModel["id"];
+  parent_id: CommentModel["id"];
   reply: CommentModel;
 }
 
@@ -98,11 +98,11 @@ export const bookSlice = createSlice({
       });
     },
     replyComment: (state, action: PayloadAction<IReplyComment>) => {
-      const { book_id, reply, parrent_id } = action.payload;
+      const { book_id, reply, parent_id } = action.payload;
       const bookDetailIndex = findCommentByBookId(state.comments, book_id);
       handleCommentAction({
         comments: state.comments[bookDetailIndex].comments,
-        commentId: parrent_id!,
+        commentId: parent_id!,
         type: "add",
         contentModel: reply,
         content: "",
