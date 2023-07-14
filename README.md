@@ -20,10 +20,11 @@ cd Test_Fcorp/_deploy/local/ && bash build.sh
 
 2. Run local
 * api-server
+Enter your ELASTICSEARCH_HOST in local
 ```
 cd api-server .env
 ```
-Enter your ELASTICSEARCH_HOST in local
+
 ```
 cd api-server
 npm i
