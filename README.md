@@ -12,7 +12,7 @@ git clone https://github.com/NguyenVanDuc036/Test_Fcorp.git && cd Test_Fcorp/_de
 
 Open [http://localhost:3000/](http://localhost:3000/) 
 
-> Note: Tf api-server can't connect to elasticsearch --> retry
+> Note: If api-server can't connect to elasticsearch --> retry
 
 ```
 cd Test_Fcorp/_deploy/local/ && bash build.sh
@@ -22,11 +22,11 @@ cd Test_Fcorp/_deploy/local/ && bash build.sh
 * api-server
 ```
 cd api-server .env
-npm i
 ```
 Enter your ELASTICSEARCH_HOST in local
 ```
 cd api-server
+npm i
 npm run dev
 ```
 
