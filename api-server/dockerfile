@@ -1,6 +1,6 @@
 FROM node:latest
 
-WORKDIR /appzz
+WORKDIR /app
 
 COPY package*.json ./
 
