@@ -38,7 +38,7 @@ cd react-app
 npm i
 npm start
 ```
-> Note: enpoint : cd react-app/src/config/config.ts 
+> Note: enpoint --> cd react-app/src/config/config.ts 
 
 Open [http://localhost:3000/](http://localhost:3000/) 
 
