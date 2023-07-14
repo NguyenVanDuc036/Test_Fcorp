@@ -21,5 +21,20 @@ cd Test_Fcorp/_deploy/local/ && bash build.sh
 2. Run local
 * api-server
 ```
-cd Test_Fcorp/_deploy/local/ && bash build.sh
+cd api-server .env
+npm i
 ```
+Enter your ELASTICSEARCH_HOST in local
+```
+cd api-server
+npm run dev
+```
+
+* react-app
+```
+cd react-app
+npm i
+npm start
+```
+Open [http://localhost:3000/](http://localhost:3000/) 
+
