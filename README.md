@@ -4,7 +4,7 @@
 
 
 Database seeding: 
-* DB_SEED from ENV . Default : 1(enable)
+* DB_SEED from ENV, default : 1(enable)
 
 To compile Test app from source:
 
@@ -42,7 +42,7 @@ cd react-app
 npm i
 npm start
 ```
-> Note: enpoint --> cd react-app/src/config/config.ts 
+> Note: endpoint --> cd react-app/src/config/config.ts 
 
 Open [http://localhost:3000/](http://localhost:3000/) 
 
