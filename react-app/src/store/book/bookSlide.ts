@@ -24,10 +24,6 @@ interface IReplyComment {
   reply: CommentModel;
 }
 
-const initialState: { comments: any[] } = {
-  comments
-};
-
 type BookActionType = "add" | "update" | "delete";
 
 interface ICommentAction {
@@ -37,6 +33,10 @@ interface ICommentAction {
   contentModel?: CommentModel;
   content: string;
 }
+
+const initialState: { comments: any[] } = {
+  comments
+};
 
 function handleCommentAction({
   comments,
@@ -49,7 +49,7 @@ function handleCommentAction({
     if (comment.id === commentId) {
       switch (type) {
         case "add":
-          contentModel && comment.children.unshift(contentModel);
+          comment.children.unshift(contentModel!);
           break;
         case "update":
           comment.content = content;

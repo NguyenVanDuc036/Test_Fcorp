@@ -141,7 +141,6 @@ const Comment: React.FC<Props> = ({ comment, bookId, handleReply, handleDeleteCo
           <form className="mb-6">
             <div className="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-200 dark:border-gray-200">
               <textarea
-                // rows={1}
                 ref={inputEdit}
                 onChange={(e) => {
                   setEditText(e.target.value);
@@ -178,7 +177,7 @@ const Comment: React.FC<Props> = ({ comment, bookId, handleReply, handleDeleteCo
       )}
       {comment.children.length > 0 && (
         <ul className="ml-12 space-y-4">
-          {comment.children.map((childComment: any) => (
+          {comment.children.map((childComment) => (
             <Comment
               key={childComment.id}
               comment={childComment}
