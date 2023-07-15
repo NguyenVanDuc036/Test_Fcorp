@@ -7,7 +7,7 @@ networks:
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.14.0
-    container_name: elasticsearch
+    container_name: es-master
     environment:
       - node.name=elasticsearch
       - discovery.type=single-node
@@ -22,20 +22,24 @@ services:
     networks:
       - testapp
     ports:
-      - 9200:9200
+      - "9200:9200"
+      - "9300:9300"
 
 
   api-server:
     container_name: "api-server"
     build:
-      context: ../../z  
+      context: ../../
       dockerfile: ./api-server/dockerfile.dev
+    restart: always
     ports:
       - "4000:4000"
     depends_on:
-      - elasticsearch
+      - 'elasticsearch'
     networks:
       - testapp
+    links: 
+      - elasticsearch
 
   react-app:
     container_name: "react-app"

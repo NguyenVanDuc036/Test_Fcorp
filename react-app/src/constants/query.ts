@@ -3,5 +3,5 @@ const QUERIES = {
     BOOK_DETAIL: 'book_detail',
   };
   
-  export { QUERIES };
+export { QUERIES };
   

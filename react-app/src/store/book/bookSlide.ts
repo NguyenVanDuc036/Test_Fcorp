@@ -134,6 +134,4 @@ export const bookSlice = createSlice({
 export const { postComment, updateComment, deleteComment, replyComment } =
   bookSlice.actions;
 
-export const selectCount = (state: RootState) => state.counter.value;
-
 export default bookSlice.reducer;
