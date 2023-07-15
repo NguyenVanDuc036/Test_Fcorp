@@ -4,7 +4,7 @@ import { indexName } from "../utils/common";
 import { IBook } from "../utils/interface/book.interface";
 const bookList: IBook[] = require("../data/books.json");
 
-export async function seeBookdData() {
+export async function seeBookData() {
   try {
     const { body: exists } = await client.indices.exists({
       index: indexName["books"]

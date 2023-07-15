@@ -28,7 +28,7 @@ services:
   api-server:
     container_name: "api-server"
     build:
-      context: ../../
+      context: ../../z  
       dockerfile: ./api-server/dockerfile.dev
     ports:
       - "4000:4000"

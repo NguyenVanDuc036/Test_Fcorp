@@ -1,12 +1,11 @@
 import fastify from "fastify";
-import { FASTIFY_PORT, HOST, PREFIX } from "./config/config";
+import { FASTIFY_PORT, HOST, PREFIX, dbSeed } from "./config/config";
 import rootRouter from "./router";
-import { seeBookdData } from "./seeders/seedBookData";
+import { seeBookData } from "./seeders/seedBookData";
 import cors from '@fastify/cors'
 
 const JoiCompiler = require("joi-compiler");
 const joiCompilerInstance = JoiCompiler();
-
 
 const server = fastify({
   schemaController: {
@@ -20,7 +19,9 @@ const server = fastify({
 void (async () => {
   try {
     server.listen({ port: FASTIFY_PORT, host: HOST });
-    await seeBookdData();
+    if(dbSeed){
+      await seeBookData();
+    }
   } catch (error) {
     console.log(error);
   }

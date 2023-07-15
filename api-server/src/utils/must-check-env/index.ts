@@ -11,3 +11,8 @@ export const mustCheckEnvValues = (name: string, values: string[]) => {
     throw new Error(`Invalid env ${name}=${v} expect ${values.join(' | ')}`)
   }
 }
+
+export const envToBoolean = (name: string) => {
+  const env = process.env[name]
+  return env === '1' || env === 'true'
+}
