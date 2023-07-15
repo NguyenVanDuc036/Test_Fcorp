@@ -4,7 +4,7 @@
 
 
 Database seeding: 
-* DB_SEED from ENV . Default : 1
+* DB_SEED from ENV . Default : 1(enable)
 
 To compile Test app from source:
 
