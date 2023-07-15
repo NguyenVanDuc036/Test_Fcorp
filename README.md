@@ -2,6 +2,10 @@
 
 ## Usage
 
+
+Database seeding: 
+* DB_SEED from ENV . Default : 1
+
 To compile Test app from source:
 
 
