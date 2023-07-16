@@ -14,6 +14,14 @@ To compile Test app from source:
 git clone https://github.com/NguyenVanDuc036/Test_Fcorp.git && cd Test_Fcorp/_deploy/local/ && bash build.sh
 ```
 
+> Note: if the server can't connect to elasticsearch --> retry
+
+```
+bash rebuild.sh api-server
+```
+
+
+
 Open [http://localhost:3000/](http://localhost:3000/) 
 
 2. Run local
