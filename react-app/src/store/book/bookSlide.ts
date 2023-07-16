@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { RootState } from "../store";
 import { BookCommentModel, CommentModel } from "../../models/commentModel";
 import comments from "../../mocks/data/comments.json"
 export interface IPostComment {

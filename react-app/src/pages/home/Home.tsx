@@ -6,7 +6,7 @@ import { BookListComponent } from "./component/book/BookListComponent";
 export default function Home() {
 
  const { isFetching, data, isLoading, refetch } = useQuery(
-    [QUERIES.BOOK_LIST, ''],
+    [QUERIES.BOOK_LIST],
     () => BookService.getBookList(),
     { cacheTime: 0, keepPreviousData: true, refetchOnWindowFocus: false }
   );
@@ -16,9 +16,6 @@ export default function Home() {
     return (
         <div className="p-20 grid grid-cols-4 gap-10">
             <BookListComponent books={books} />
-            {/* <div className="grid grid-cols-4 gap-4">
-                
-            </div> */}
         </div>
 
     );

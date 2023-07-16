@@ -19,7 +19,7 @@ const BookDetailComponent: React.FC<{}> = () => {
         refetchOnWindowFocus: false,
     }).data;
 
-    const bookDetail = orderDetail?.data.result;
+    const bookDetail = orderDetail?.data?.result;
 
     return (
         <div className="px-20 py-10">
